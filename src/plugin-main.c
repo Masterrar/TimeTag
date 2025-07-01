@@ -22,8 +22,18 @@ with this program. If not, see <https://www.gnu.org/licenses/>
 OBS_DECLARE_MODULE()
 OBS_MODULE_USE_DEFAULT_LOCALE(PLUGIN_NAME, "en-US")
 
+static void on_hotkey_pressed(void *data, obs_hotkey_id id, obs_hotkey_t *hotkey, bool pressed)
+{
+	if (pressed) 
+	{
+		obs_log(LOG_INFO, "Hotkey pressed, writing to log");
+	}
+	
+}
+
 bool obs_module_load(void)
 {
+	obs_hotkey_register_frontend("time-tag.tag", "TimeTag Tag Hotkey", on_hotkey_pressed, NULL);
 	obs_log(LOG_INFO, "plugin loaded successfully (version %s)", PLUGIN_VERSION);
 	return true;
 }

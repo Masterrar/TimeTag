@@ -36,10 +36,10 @@
             "bundleId": "com.example.plugintemplate-for-obs"
         }
     },
-    "name": "plugintemplate-for-obs",
-    "displayName": "Plugin Template for OBS",
+    "name": "time-tag",
+    "displayName": "Time Tag for OBS",
     "version": "1.0.0",
-    "author": "Your Name Here",
-    "website": "https://example.com",
-    "email": "me@example.com"
+    "author": "Wifi9g",
+    "website": "https://github.com/Masterrar/TimeTag?tab=readme-ov-file",
+    "email": "rogovartemalex@gmail.com"
 }
